@@ -1,4 +1,4 @@
-# -
+# 
 SSM框架相关配置
 
 application.xml
