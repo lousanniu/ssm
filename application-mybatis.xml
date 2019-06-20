@@ -51,13 +51,13 @@
 
 	<!--配置事物切面 -->
 	<aop:config>
-		<aop:pointcut expression="execution(* com.jt.manage.service..*.*(..))" id="pc" />
+		<aop:pointcut expression="execution(* com.jiyu.manage.service..*.*(..))" id="pc" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="pc" />
 	</aop:config>
 	
 		<!--管理mapper接口 创建代理对象 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.jt.manage.mapper"></property>
+		<property name="basePackage" value="com.jiyu.manage.mapper"></property>
 	</bean>
 	
 
